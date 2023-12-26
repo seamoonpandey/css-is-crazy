@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowman image</title>
+    <style>
+        * {
+            aspect-ratio: 1;
+        }
+
+        body {
+            background: #642328;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 3rem;
+        }
+
+        .round {
+            border-radius: 100%;
+        }
+
+        .semicircle {
+            aspect-ratio: 2;
+            border-radius: 150px 150px 0 0;
+            background-color: green;
+        }
+
+        .white {
+            background: #FFFFFF;
+        }
+
+        .brown {
+            background: #642328;
+        }
+
+        .skin {
+            background: #FF8D7A;
+        }
+
+        .head {
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: -3px;
+        }
+
+        .eye {
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .neck {
+            width: 75px;
+            height: 15px;
+            margin-top: -15px;
+            z-index: 1
+        }
+
+        .torso {
+            width: 130px;
+            z-index: 0;
+            margin-top: -12px;
+        }
+
+        .base {
+            width: 162px;
+            margin-top: -75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head round white">
+        <div class="eye round brown"></div>
+        <div class="eye round brown"></div>
+    </div>
+    <div class="neck skin"></div>
+    <div class="torso white round"></div>
+    <div class="base white semicircle"></div>
+
+</body>
+
+</html>
