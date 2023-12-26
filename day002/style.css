@@ -1,0 +1,72 @@
+.head,
+.eye,
+.torso,
+.base {
+    aspect-ratio: 1;
+}
+
+body {
+    background: #642328;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.semicircle {
+    aspect-ratio: 2;
+    border-radius: 150px 150px 0 0;
+    background-color: green;
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+.brown {
+    background: #642328;
+}
+
+.skin {
+    background: #FF8D7A;
+}
+
+.head {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: -3px;
+}
+
+.eye {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.neck {
+    width: 75px;
+    height: 15px;
+    margin-top: -15px;
+    z-index: 1
+}
+
+.torso {
+    width: 130px;
+    z-index: 0;
+    margin-top: -12px;
+}
+
+.base {
+    width: 162px;
+    margin-top: -75px;
+}
