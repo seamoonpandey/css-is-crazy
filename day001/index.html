@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie looking thing</title>
+    <style>
+        body {
+            margin: 0;
+            background: #14313E;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .head,
+        .hand,
+        .legs div,
+        .buttons {
+            position: relative;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            margin-bottom: -10px;
+            background: #BD3E4B;
+        }
+
+        .eyes {
+            display: flex;
+            background: none;
+            gap: 0.6rem;
+        }
+
+        .eye {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #14313E;
+        }
+
+        .hand {
+            width: 180px;
+            height: 60px;
+            border-radius: 5rem 5rem;
+            background: #BD3E4B;
+        }
+
+        .legs {
+            display: flex;
+        }
+
+        .right-leg,
+        .left-leg {
+            width: 90px;
+            height: 60px;
+            border-radius: 5rem;
+            margin: 0 -1rem;
+            background: #BD3E4B;
+        }
+
+        .right-leg {
+            transform: rotate(45deg);
+        }
+
+        .left-leg {
+            transform: rotate(-45deg);
+        }
+
+        .buttons {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            margin-top: 2rem
+        }
+
+        .button {
+            border-radius: 50%;
+            background: #F16348;
+            width: 20px;
+            aspect-ratio: 1;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        <div class="hand"></div>
+        <div class="buttons">
+            <div class="button"></div>
+            <div class="button"></div>
+        </div>
+        <div class="legs">
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
