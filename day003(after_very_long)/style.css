@@ -1,0 +1,23 @@
+body {
+  background: #f0dac1;
+}
+
+.o {
+  z-index: 1;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 140px;
+  height: 180px;
+  background: #c3463d;
+}
+
+.m {
+  position: absolute;
+  left: 0;
+  top: 90;
+  width: 300px;
+  height: 180px;
+  background: #a52f28;
+  clip-path: polygon(100% 0, 75% 50%, 100% 100%, 0 100%, 0 0);
+}
